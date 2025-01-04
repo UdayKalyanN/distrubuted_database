@@ -1,0 +1,359 @@
+2024-11-24 20:29:54,800 - root - INFO - Loaded 10000 records
+2024-11-24 20:29:54,802 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-11-24 20:29:54,802 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2024-11-24 20:29:54,803 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-11-24 20:29:54,909 - kafka.conn - INFO - Broker version identified as 2.6.0
+2024-11-24 20:29:54,910 - kafka.conn - INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2024-11-24 20:29:54,910 - RetailProducer - INFO - Kafka producer initialized successfully
+2024-11-24 20:29:54,910 - root - INFO - Cleaning data...
+2024-11-24 20:29:54,911 - RetailProducer - INFO - Starting data cleaning process...
+/Users/udaykalyannuthalapati/distributed_retail_analytics/producer.py:152: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'], errors='coerce')
+2024-11-24 20:29:54,990 - RetailProducer - INFO - Data cleaning completed:
+2024-11-24 20:29:54,990 - RetailProducer - INFO - Initial records: 10000
+2024-11-24 20:29:54,990 - RetailProducer - INFO - Removed records: 345
+2024-11-24 20:29:54,990 - RetailProducer - INFO - Final records: 9655
+2024-11-24 20:29:54,990 - root - INFO - After cleaning: 9655 records
+2024-11-24 20:29:54,990 - root - INFO - Starting data ingestion...
+2024-11-24 20:29:55,012 - RetailProducer - INFO - Processing batch 1/97
+2024-11-24 20:29:55,067 - kafka.conn - INFO - <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-11-24 20:29:55,067 - kafka.conn - INFO - <BrokerConnection node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-11-24 20:29:55,067 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-11-24 20:30:06,549 - RetailProducer - INFO - Progress: 1.04%
+2024-11-24 20:30:06,550 - RetailProducer - INFO - Successful: 100, Failed: 0, Retried: 0
+2024-11-24 20:30:06,653 - RetailProducer - INFO - Processing batch 2/97
+2024-11-24 20:30:17,565 - RetailProducer - INFO - Progress: 2.07%
+2024-11-24 20:30:17,567 - RetailProducer - INFO - Successful: 200, Failed: 0, Retried: 0
+2024-11-24 20:30:17,669 - RetailProducer - INFO - Processing batch 3/97
+2024-11-24 20:30:28,879 - RetailProducer - INFO - Progress: 3.11%
+2024-11-24 20:30:28,881 - RetailProducer - INFO - Successful: 300, Failed: 0, Retried: 0
+2024-11-24 20:30:28,983 - RetailProducer - INFO - Processing batch 4/97
+2024-11-24 20:30:40,391 - RetailProducer - INFO - Progress: 4.14%
+2024-11-24 20:30:40,392 - RetailProducer - INFO - Successful: 400, Failed: 0, Retried: 0
+2024-11-24 20:30:40,493 - RetailProducer - INFO - Processing batch 5/97
+2024-11-24 20:30:51,280 - RetailProducer - INFO - Progress: 5.18%
+2024-11-24 20:30:51,281 - RetailProducer - INFO - Successful: 500, Failed: 0, Retried: 0
+2024-11-24 20:30:51,385 - RetailProducer - INFO - Processing batch 6/97
+2024-11-24 20:31:02,036 - RetailProducer - INFO - Progress: 6.21%
+2024-11-24 20:31:02,037 - RetailProducer - INFO - Successful: 600, Failed: 0, Retried: 0
+2024-11-24 20:31:02,138 - RetailProducer - INFO - Processing batch 7/97
+2024-11-24 20:31:12,767 - RetailProducer - INFO - Progress: 7.25%
+2024-11-24 20:31:12,768 - RetailProducer - INFO - Successful: 700, Failed: 0, Retried: 0
+2024-11-24 20:31:12,870 - RetailProducer - INFO - Processing batch 8/97
+2024-11-24 20:31:23,511 - RetailProducer - INFO - Progress: 8.29%
+2024-11-24 20:31:23,512 - RetailProducer - INFO - Successful: 800, Failed: 0, Retried: 0
+2024-11-24 20:31:23,616 - RetailProducer - INFO - Processing batch 9/97
+2024-11-24 20:31:34,241 - RetailProducer - INFO - Progress: 9.32%
+2024-11-24 20:31:34,242 - RetailProducer - INFO - Successful: 900, Failed: 0, Retried: 0
+2024-11-24 20:31:34,345 - RetailProducer - INFO - Processing batch 10/97
+2024-11-24 20:31:45,007 - RetailProducer - INFO - Progress: 10.36%
+2024-11-24 20:31:45,007 - RetailProducer - INFO - Successful: 1000, Failed: 0, Retried: 0
+2024-11-24 20:31:45,109 - RetailProducer - INFO - Processing batch 11/97
+2024-11-24 20:31:55,777 - RetailProducer - INFO - Progress: 11.39%
+2024-11-24 20:31:55,778 - RetailProducer - INFO - Successful: 1100, Failed: 0, Retried: 0
+2024-11-24 20:31:55,881 - RetailProducer - INFO - Processing batch 12/97
+2024-11-24 20:32:06,606 - RetailProducer - INFO - Progress: 12.43%
+2024-11-24 20:32:06,607 - RetailProducer - INFO - Successful: 1200, Failed: 0, Retried: 0
+2024-11-24 20:32:06,710 - RetailProducer - INFO - Processing batch 13/97
+2024-11-24 20:32:17,367 - RetailProducer - INFO - Progress: 13.46%
+2024-11-24 20:32:17,368 - RetailProducer - INFO - Successful: 1300, Failed: 0, Retried: 0
+2024-11-24 20:32:17,473 - RetailProducer - INFO - Processing batch 14/97
+2024-11-24 20:32:28,218 - RetailProducer - INFO - Progress: 14.50%
+2024-11-24 20:32:28,219 - RetailProducer - INFO - Successful: 1400, Failed: 0, Retried: 0
+2024-11-24 20:32:28,322 - RetailProducer - INFO - Processing batch 15/97
+2024-11-24 20:32:38,916 - RetailProducer - INFO - Progress: 15.54%
+2024-11-24 20:32:38,917 - RetailProducer - INFO - Successful: 1500, Failed: 0, Retried: 0
+2024-11-24 20:32:39,022 - RetailProducer - INFO - Processing batch 16/97
+2024-11-24 20:32:49,696 - RetailProducer - INFO - Progress: 16.57%
+2024-11-24 20:32:49,696 - RetailProducer - INFO - Successful: 1600, Failed: 0, Retried: 0
+2024-11-24 20:32:49,799 - RetailProducer - INFO - Processing batch 17/97
+2024-11-24 20:33:00,419 - RetailProducer - INFO - Progress: 17.61%
+2024-11-24 20:33:00,420 - RetailProducer - INFO - Successful: 1700, Failed: 0, Retried: 0
+2024-11-24 20:33:00,521 - RetailProducer - INFO - Processing batch 18/97
+2024-11-24 20:33:11,399 - RetailProducer - INFO - Progress: 18.64%
+2024-11-24 20:33:11,400 - RetailProducer - INFO - Successful: 1800, Failed: 0, Retried: 0
+2024-11-24 20:33:11,502 - RetailProducer - INFO - Processing batch 19/97
+2024-11-24 20:33:23,383 - RetailProducer - INFO - Progress: 19.68%
+2024-11-24 20:33:23,383 - RetailProducer - INFO - Successful: 1900, Failed: 0, Retried: 0
+2024-11-24 20:33:23,488 - RetailProducer - INFO - Processing batch 20/97
+2024-11-24 20:33:35,767 - RetailProducer - INFO - Progress: 20.71%
+2024-11-24 20:33:35,769 - RetailProducer - INFO - Successful: 2000, Failed: 0, Retried: 0
+2024-11-24 20:33:35,870 - RetailProducer - INFO - Processing batch 21/97
+2024-11-24 20:33:46,692 - RetailProducer - INFO - Progress: 21.75%
+2024-11-24 20:33:46,692 - RetailProducer - INFO - Successful: 2100, Failed: 0, Retried: 0
+2024-11-24 20:33:46,797 - RetailProducer - INFO - Processing batch 22/97
+2024-11-24 20:33:57,237 - RetailProducer - INFO - Progress: 22.79%
+2024-11-24 20:33:57,238 - RetailProducer - INFO - Successful: 2200, Failed: 0, Retried: 0
+2024-11-24 20:33:57,342 - RetailProducer - INFO - Processing batch 23/97
+2024-11-24 20:34:08,877 - RetailProducer - INFO - Progress: 23.82%
+2024-11-24 20:34:08,878 - RetailProducer - INFO - Successful: 2300, Failed: 0, Retried: 0
+2024-11-24 20:34:08,980 - RetailProducer - INFO - Processing batch 24/97
+2024-11-24 20:34:19,683 - RetailProducer - INFO - Progress: 24.86%
+2024-11-24 20:34:19,684 - RetailProducer - INFO - Successful: 2400, Failed: 0, Retried: 0
+2024-11-24 20:34:19,789 - RetailProducer - INFO - Processing batch 25/97
+2024-11-24 20:34:30,714 - RetailProducer - INFO - Progress: 25.89%
+2024-11-24 20:34:30,715 - RetailProducer - INFO - Successful: 2500, Failed: 0, Retried: 0
+2024-11-24 20:34:30,820 - RetailProducer - INFO - Processing batch 26/97
+2024-11-24 20:34:42,316 - RetailProducer - INFO - Progress: 26.93%
+2024-11-24 20:34:42,317 - RetailProducer - INFO - Successful: 2600, Failed: 0, Retried: 0
+2024-11-24 20:34:42,422 - RetailProducer - INFO - Processing batch 27/97
+2024-11-24 20:34:53,202 - RetailProducer - INFO - Progress: 27.96%
+2024-11-24 20:34:53,202 - RetailProducer - INFO - Successful: 2700, Failed: 0, Retried: 0
+2024-11-24 20:34:53,303 - RetailProducer - INFO - Processing batch 28/97
+2024-11-24 20:35:04,058 - RetailProducer - INFO - Progress: 29.00%
+2024-11-24 20:35:04,058 - RetailProducer - INFO - Successful: 2800, Failed: 0, Retried: 0
+2024-11-24 20:35:04,162 - RetailProducer - INFO - Processing batch 29/97
+2024-11-24 20:35:18,656 - RetailProducer - INFO - Progress: 30.04%
+2024-11-24 20:35:18,657 - RetailProducer - INFO - Successful: 2900, Failed: 0, Retried: 0
+2024-11-24 20:35:18,761 - RetailProducer - INFO - Processing batch 30/97
+2024-11-24 20:35:29,580 - RetailProducer - INFO - Progress: 31.07%
+2024-11-24 20:35:29,581 - RetailProducer - INFO - Successful: 3000, Failed: 0, Retried: 0
+2024-11-24 20:35:29,684 - RetailProducer - INFO - Processing batch 31/97
+2024-11-24 20:35:40,317 - RetailProducer - INFO - Progress: 32.11%
+2024-11-24 20:35:40,317 - RetailProducer - INFO - Successful: 3100, Failed: 0, Retried: 0
+2024-11-24 20:35:40,421 - RetailProducer - INFO - Processing batch 32/97
+2024-11-24 20:35:51,176 - RetailProducer - INFO - Progress: 33.14%
+2024-11-24 20:35:51,176 - RetailProducer - INFO - Successful: 3200, Failed: 0, Retried: 0
+2024-11-24 20:35:51,278 - RetailProducer - INFO - Processing batch 33/97
+2024-11-24 20:36:01,895 - RetailProducer - INFO - Progress: 34.18%
+2024-11-24 20:36:01,896 - RetailProducer - INFO - Successful: 3300, Failed: 0, Retried: 0
+2024-11-24 20:36:02,001 - RetailProducer - INFO - Processing batch 34/97
+2024-11-24 20:36:12,575 - RetailProducer - INFO - Progress: 35.21%
+2024-11-24 20:36:12,576 - RetailProducer - INFO - Successful: 3400, Failed: 0, Retried: 0
+2024-11-24 20:36:12,676 - RetailProducer - INFO - Processing batch 35/97
+2024-11-24 20:36:23,475 - RetailProducer - INFO - Progress: 36.25%
+2024-11-24 20:36:23,477 - RetailProducer - INFO - Successful: 3500, Failed: 0, Retried: 0
+2024-11-24 20:36:23,581 - RetailProducer - INFO - Processing batch 36/97
+2024-11-24 20:36:34,258 - RetailProducer - INFO - Progress: 37.29%
+2024-11-24 20:36:34,259 - RetailProducer - INFO - Successful: 3600, Failed: 0, Retried: 0
+2024-11-24 20:36:34,362 - RetailProducer - INFO - Processing batch 37/97
+2024-11-24 20:36:45,024 - RetailProducer - INFO - Progress: 38.32%
+2024-11-24 20:36:45,026 - RetailProducer - INFO - Successful: 3700, Failed: 0, Retried: 0
+2024-11-24 20:36:45,127 - RetailProducer - INFO - Processing batch 38/97
+2024-11-24 20:36:55,771 - RetailProducer - INFO - Progress: 39.36%
+2024-11-24 20:36:55,772 - RetailProducer - INFO - Successful: 3800, Failed: 0, Retried: 0
+2024-11-24 20:36:55,873 - RetailProducer - INFO - Processing batch 39/97
+2024-11-24 20:37:06,539 - RetailProducer - INFO - Progress: 40.39%
+2024-11-24 20:37:06,540 - RetailProducer - INFO - Successful: 3900, Failed: 0, Retried: 0
+2024-11-24 20:37:06,642 - RetailProducer - INFO - Processing batch 40/97
+2024-11-24 20:37:17,252 - RetailProducer - INFO - Progress: 41.43%
+2024-11-24 20:37:17,252 - RetailProducer - INFO - Successful: 4000, Failed: 0, Retried: 0
+2024-11-24 20:37:17,356 - RetailProducer - INFO - Processing batch 41/97
+2024-11-24 20:37:27,958 - RetailProducer - INFO - Progress: 42.47%
+2024-11-24 20:37:27,960 - RetailProducer - INFO - Successful: 4100, Failed: 0, Retried: 0
+2024-11-24 20:37:28,062 - RetailProducer - INFO - Processing batch 42/97
+2024-11-24 20:37:38,638 - RetailProducer - INFO - Progress: 43.50%
+2024-11-24 20:37:38,639 - RetailProducer - INFO - Successful: 4200, Failed: 0, Retried: 0
+2024-11-24 20:37:38,742 - RetailProducer - INFO - Processing batch 43/97
+2024-11-24 20:37:49,300 - RetailProducer - INFO - Progress: 44.54%
+2024-11-24 20:37:49,303 - RetailProducer - INFO - Successful: 4300, Failed: 0, Retried: 0
+2024-11-24 20:37:49,407 - RetailProducer - INFO - Processing batch 44/97
+2024-11-24 20:38:00,025 - RetailProducer - INFO - Progress: 45.57%
+2024-11-24 20:38:00,026 - RetailProducer - INFO - Successful: 4400, Failed: 0, Retried: 0
+2024-11-24 20:38:00,128 - RetailProducer - INFO - Processing batch 45/97
+2024-11-24 20:38:10,709 - RetailProducer - INFO - Progress: 46.61%
+2024-11-24 20:38:10,711 - RetailProducer - INFO - Successful: 4500, Failed: 0, Retried: 0
+2024-11-24 20:38:10,814 - RetailProducer - INFO - Processing batch 46/97
+2024-11-24 20:38:21,466 - RetailProducer - INFO - Progress: 47.64%
+2024-11-24 20:38:21,466 - RetailProducer - INFO - Successful: 4600, Failed: 0, Retried: 0
+2024-11-24 20:38:21,568 - RetailProducer - INFO - Processing batch 47/97
+2024-11-24 20:38:32,220 - RetailProducer - INFO - Progress: 48.68%
+2024-11-24 20:38:32,221 - RetailProducer - INFO - Successful: 4700, Failed: 0, Retried: 0
+2024-11-24 20:38:32,326 - RetailProducer - INFO - Processing batch 48/97
+2024-11-24 20:38:42,889 - RetailProducer - INFO - Progress: 49.72%
+2024-11-24 20:38:42,890 - RetailProducer - INFO - Successful: 4800, Failed: 0, Retried: 0
+2024-11-24 20:38:42,992 - RetailProducer - INFO - Processing batch 49/97
+2024-11-24 20:38:53,609 - RetailProducer - INFO - Progress: 50.75%
+2024-11-24 20:38:53,610 - RetailProducer - INFO - Successful: 4900, Failed: 0, Retried: 0
+2024-11-24 20:38:53,715 - RetailProducer - INFO - Processing batch 50/97
+2024-11-24 20:39:04,294 - RetailProducer - INFO - Progress: 51.79%
+2024-11-24 20:39:04,295 - RetailProducer - INFO - Successful: 5000, Failed: 0, Retried: 0
+2024-11-24 20:39:04,396 - RetailProducer - INFO - Processing batch 51/97
+2024-11-24 20:39:15,142 - RetailProducer - INFO - Progress: 52.82%
+2024-11-24 20:39:15,143 - RetailProducer - INFO - Successful: 5100, Failed: 0, Retried: 0
+2024-11-24 20:39:15,252 - RetailProducer - INFO - Processing batch 52/97
+2024-11-24 20:39:26,014 - RetailProducer - INFO - Progress: 53.86%
+2024-11-24 20:39:26,016 - RetailProducer - INFO - Successful: 5200, Failed: 0, Retried: 0
+2024-11-24 20:39:26,125 - RetailProducer - INFO - Processing batch 53/97
+2024-11-24 20:39:36,791 - RetailProducer - INFO - Progress: 54.89%
+2024-11-24 20:39:36,792 - RetailProducer - INFO - Successful: 5300, Failed: 0, Retried: 0
+2024-11-24 20:39:36,894 - RetailProducer - INFO - Processing batch 54/97
+2024-11-24 20:39:47,564 - RetailProducer - INFO - Progress: 55.93%
+2024-11-24 20:39:47,565 - RetailProducer - INFO - Successful: 5400, Failed: 0, Retried: 0
+2024-11-24 20:39:47,667 - RetailProducer - INFO - Processing batch 55/97
+2024-11-24 20:39:58,315 - RetailProducer - INFO - Progress: 56.97%
+2024-11-24 20:39:58,316 - RetailProducer - INFO - Successful: 5500, Failed: 0, Retried: 0
+2024-11-24 20:39:58,418 - RetailProducer - INFO - Processing batch 56/97
+2024-11-24 20:40:09,080 - RetailProducer - INFO - Progress: 58.00%
+2024-11-24 20:40:09,081 - RetailProducer - INFO - Successful: 5600, Failed: 0, Retried: 0
+2024-11-24 20:40:09,187 - RetailProducer - INFO - Processing batch 57/97
+2024-11-24 20:40:19,857 - RetailProducer - INFO - Progress: 59.04%
+2024-11-24 20:40:19,858 - RetailProducer - INFO - Successful: 5700, Failed: 0, Retried: 0
+2024-11-24 20:40:19,965 - RetailProducer - INFO - Processing batch 58/97
+2024-11-24 20:40:30,647 - RetailProducer - INFO - Progress: 60.07%
+2024-11-24 20:40:30,649 - RetailProducer - INFO - Successful: 5800, Failed: 0, Retried: 0
+2024-11-24 20:40:30,758 - RetailProducer - INFO - Processing batch 59/97
+2024-11-24 20:40:41,452 - RetailProducer - INFO - Progress: 61.11%
+2024-11-24 20:40:41,453 - RetailProducer - INFO - Successful: 5900, Failed: 0, Retried: 0
+2024-11-24 20:40:41,559 - RetailProducer - INFO - Processing batch 60/97
+2024-11-24 20:40:52,239 - RetailProducer - INFO - Progress: 62.14%
+2024-11-24 20:40:52,241 - RetailProducer - INFO - Successful: 6000, Failed: 0, Retried: 0
+2024-11-24 20:40:52,348 - RetailProducer - INFO - Processing batch 61/97
+2024-11-24 20:41:03,015 - RetailProducer - INFO - Progress: 63.18%
+2024-11-24 20:41:03,017 - RetailProducer - INFO - Successful: 6100, Failed: 0, Retried: 0
+2024-11-24 20:41:03,120 - RetailProducer - INFO - Processing batch 62/97
+2024-11-24 20:41:13,733 - RetailProducer - INFO - Progress: 64.22%
+2024-11-24 20:41:13,734 - RetailProducer - INFO - Successful: 6200, Failed: 0, Retried: 0
+2024-11-24 20:41:13,835 - RetailProducer - INFO - Processing batch 63/97
+2024-11-24 20:41:24,457 - RetailProducer - INFO - Progress: 65.25%
+2024-11-24 20:41:24,458 - RetailProducer - INFO - Successful: 6300, Failed: 0, Retried: 0
+2024-11-24 20:41:24,567 - RetailProducer - INFO - Processing batch 64/97
+2024-11-24 20:41:35,177 - RetailProducer - INFO - Progress: 66.29%
+2024-11-24 20:41:35,177 - RetailProducer - INFO - Successful: 6400, Failed: 0, Retried: 0
+2024-11-24 20:41:35,284 - RetailProducer - INFO - Processing batch 65/97
+2024-11-24 20:41:45,909 - RetailProducer - INFO - Progress: 67.32%
+2024-11-24 20:41:45,910 - RetailProducer - INFO - Successful: 6500, Failed: 0, Retried: 0
+2024-11-24 20:41:46,013 - RetailProducer - INFO - Processing batch 66/97
+2024-11-24 20:41:56,677 - RetailProducer - INFO - Progress: 68.36%
+2024-11-24 20:41:56,678 - RetailProducer - INFO - Successful: 6600, Failed: 0, Retried: 0
+2024-11-24 20:41:56,786 - RetailProducer - INFO - Processing batch 67/97
+2024-11-24 20:42:07,404 - RetailProducer - INFO - Progress: 69.39%
+2024-11-24 20:42:07,406 - RetailProducer - INFO - Successful: 6700, Failed: 0, Retried: 0
+2024-11-24 20:42:07,508 - RetailProducer - INFO - Processing batch 68/97
+2024-11-24 20:42:18,112 - RetailProducer - INFO - Progress: 70.43%
+2024-11-24 20:42:18,112 - RetailProducer - INFO - Successful: 6800, Failed: 0, Retried: 0
+2024-11-24 20:42:18,217 - RetailProducer - INFO - Processing batch 69/97
+2024-11-24 20:42:28,911 - RetailProducer - INFO - Progress: 71.47%
+2024-11-24 20:42:28,912 - RetailProducer - INFO - Successful: 6900, Failed: 0, Retried: 0
+2024-11-24 20:42:29,015 - RetailProducer - INFO - Processing batch 70/97
+2024-11-24 20:42:39,731 - RetailProducer - INFO - Progress: 72.50%
+2024-11-24 20:42:39,732 - RetailProducer - INFO - Successful: 7000, Failed: 0, Retried: 0
+2024-11-24 20:42:39,840 - RetailProducer - INFO - Processing batch 71/97
+2024-11-24 20:42:50,490 - RetailProducer - INFO - Progress: 73.54%
+2024-11-24 20:42:50,492 - RetailProducer - INFO - Successful: 7100, Failed: 0, Retried: 0
+2024-11-24 20:42:50,601 - RetailProducer - INFO - Processing batch 72/97
+2024-11-24 20:43:01,196 - RetailProducer - INFO - Progress: 74.57%
+2024-11-24 20:43:01,198 - RetailProducer - INFO - Successful: 7200, Failed: 0, Retried: 0
+2024-11-24 20:43:01,306 - RetailProducer - INFO - Processing batch 73/97
+2024-11-24 20:43:11,910 - RetailProducer - INFO - Progress: 75.61%
+2024-11-24 20:43:11,910 - RetailProducer - INFO - Successful: 7300, Failed: 0, Retried: 0
+2024-11-24 20:43:12,014 - RetailProducer - INFO - Processing batch 74/97
+2024-11-24 20:43:22,625 - RetailProducer - INFO - Progress: 76.64%
+2024-11-24 20:43:22,627 - RetailProducer - INFO - Successful: 7400, Failed: 0, Retried: 0
+2024-11-24 20:43:22,728 - RetailProducer - INFO - Processing batch 75/97
+2024-11-24 20:43:33,384 - RetailProducer - INFO - Progress: 77.68%
+2024-11-24 20:43:33,386 - RetailProducer - INFO - Successful: 7500, Failed: 0, Retried: 0
+2024-11-24 20:43:33,489 - RetailProducer - INFO - Processing batch 76/97
+2024-11-24 20:43:44,122 - RetailProducer - INFO - Progress: 78.72%
+2024-11-24 20:43:44,122 - RetailProducer - INFO - Successful: 7600, Failed: 0, Retried: 0
+2024-11-24 20:43:44,225 - RetailProducer - INFO - Processing batch 77/97
+2024-11-24 20:43:54,883 - RetailProducer - INFO - Progress: 79.75%
+2024-11-24 20:43:54,884 - RetailProducer - INFO - Successful: 7700, Failed: 0, Retried: 0
+2024-11-24 20:43:54,987 - RetailProducer - INFO - Processing batch 78/97
+2024-11-24 20:43:58,804 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:58,913 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,021 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,130 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,236 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,344 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,448 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,554 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,662 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,768 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,876 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:43:59,982 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,088 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,193 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,333 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,438 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,543 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,648 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,756 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,863 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:00,968 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,074 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,184 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,292 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,399 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,504 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,699 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,804 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:01,907 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:02,016 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:02,128 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:02,243 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:02,349 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:02,454 - RetailProducer - WARNING - Unknown country Lithuania, defaulting to asiapacific-transactions
+2024-11-24 20:44:05,783 - RetailProducer - INFO - Progress: 80.79%
+2024-11-24 20:44:05,783 - RetailProducer - INFO - Successful: 7800, Failed: 0, Retried: 0
+2024-11-24 20:44:05,890 - RetailProducer - INFO - Processing batch 79/97
+2024-11-24 20:44:16,656 - RetailProducer - INFO - Progress: 81.82%
+2024-11-24 20:44:16,658 - RetailProducer - INFO - Successful: 7900, Failed: 0, Retried: 0
+2024-11-24 20:44:16,768 - RetailProducer - INFO - Processing batch 80/97
+2024-11-24 20:44:27,511 - RetailProducer - INFO - Progress: 82.86%
+2024-11-24 20:44:27,511 - RetailProducer - INFO - Successful: 8000, Failed: 0, Retried: 0
+2024-11-24 20:44:27,621 - RetailProducer - INFO - Processing batch 81/97
+2024-11-24 20:44:38,425 - RetailProducer - INFO - Progress: 83.89%
+2024-11-24 20:44:38,429 - RetailProducer - INFO - Successful: 8100, Failed: 0, Retried: 0
+2024-11-24 20:44:38,531 - RetailProducer - INFO - Processing batch 82/97
+2024-11-24 20:47:53,202 - kafka.producer.record_accumulator - WARNING - Produced messages to topic-partition TopicPartition(topic='europe-transactions', partition=1) with base offset -1 log start offset None and error None.
+2024-11-24 20:47:53,210 - RetailProducer - WARNING - Retry 1/3 for message: KafkaTimeoutError: Batch for TopicPartition(topic='europe-transactions', partition=1) containing 1 record(s) expired: 193 seconds have passed since batch creation plus linger time
+2024-11-24 20:47:53,204 - kafka.producer.record_accumulator - WARNING - Expired 1 batches in accumulator
+2024-11-24 20:48:03,600 - RetailProducer - INFO - Progress: 84.93%
+2024-11-24 20:48:03,602 - RetailProducer - INFO - Successful: 8200, Failed: 0, Retried: 1
+2024-11-24 20:48:03,709 - RetailProducer - INFO - Processing batch 83/97
+2024-11-24 20:48:14,324 - RetailProducer - INFO - Progress: 85.97%
+2024-11-24 20:48:14,324 - RetailProducer - INFO - Successful: 8300, Failed: 0, Retried: 1
+2024-11-24 20:48:14,431 - RetailProducer - INFO - Processing batch 84/97
+2024-11-24 20:48:25,092 - RetailProducer - INFO - Progress: 87.00%
+2024-11-24 20:48:25,093 - RetailProducer - INFO - Successful: 8400, Failed: 0, Retried: 1
+2024-11-24 20:48:25,203 - RetailProducer - INFO - Processing batch 85/97
+2024-11-24 20:48:35,793 - RetailProducer - INFO - Progress: 88.04%
+2024-11-24 20:48:35,794 - RetailProducer - INFO - Successful: 8500, Failed: 0, Retried: 1
+2024-11-24 20:48:35,899 - RetailProducer - INFO - Processing batch 86/97
+2024-11-24 20:53:29,369 - kafka.producer.record_accumulator - WARNING - Produced messages to topic-partition TopicPartition(topic='europe-transactions', partition=1) with base offset -1 log start offset None and error None.
+2024-11-24 20:53:29,445 - kafka.producer.record_accumulator - WARNING - Expired 1 batches in accumulator
+2024-11-24 20:53:29,445 - RetailProducer - WARNING - Retry 1/3 for message: KafkaTimeoutError: Batch for TopicPartition(topic='europe-transactions', partition=1) containing 1 record(s) expired: 288 seconds have passed since batch creation plus linger time
+2024-11-24 20:53:36,347 - RetailProducer - INFO - Progress: 89.07%
+2024-11-24 20:53:36,348 - RetailProducer - INFO - Successful: 8600, Failed: 0, Retried: 2
+2024-11-24 20:53:36,459 - RetailProducer - INFO - Processing batch 87/97
+2024-11-24 20:54:09,369 - RetailProducer - INFO - Progress: 90.11%
+2024-11-24 20:54:09,371 - RetailProducer - INFO - Successful: 8700, Failed: 0, Retried: 2
+2024-11-24 20:54:09,476 - RetailProducer - INFO - Processing batch 88/97
+2024-11-24 20:54:20,128 - RetailProducer - INFO - Progress: 91.14%
+2024-11-24 20:54:20,130 - RetailProducer - INFO - Successful: 8800, Failed: 0, Retried: 2
+2024-11-24 20:54:20,235 - RetailProducer - INFO - Processing batch 89/97
+2024-11-24 20:54:31,963 - RetailProducer - INFO - Progress: 92.18%
+2024-11-24 20:54:31,966 - RetailProducer - INFO - Successful: 8900, Failed: 0, Retried: 2
+2024-11-24 20:54:32,069 - RetailProducer - INFO - Processing batch 90/97
+2024-11-24 20:54:42,663 - RetailProducer - INFO - Progress: 93.22%
+2024-11-24 20:54:42,664 - RetailProducer - INFO - Successful: 9000, Failed: 0, Retried: 2
+2024-11-24 20:54:42,770 - RetailProducer - INFO - Processing batch 91/97
+2024-11-24 20:54:53,397 - RetailProducer - INFO - Progress: 94.25%
+2024-11-24 20:54:53,398 - RetailProducer - INFO - Successful: 9100, Failed: 0, Retried: 2
+2024-11-24 20:54:53,503 - RetailProducer - INFO - Processing batch 92/97
+2024-11-24 20:55:04,153 - RetailProducer - INFO - Progress: 95.29%
+2024-11-24 20:55:04,155 - RetailProducer - INFO - Successful: 9200, Failed: 0, Retried: 2
+2024-11-24 20:55:04,256 - RetailProducer - INFO - Processing batch 93/97
+2024-11-24 20:55:14,914 - RetailProducer - INFO - Progress: 96.32%
+2024-11-24 20:55:14,915 - RetailProducer - INFO - Successful: 9300, Failed: 0, Retried: 2
+2024-11-24 20:55:15,018 - RetailProducer - INFO - Processing batch 94/97
+2024-11-24 20:55:25,728 - RetailProducer - INFO - Progress: 97.36%
+2024-11-24 20:55:25,730 - RetailProducer - INFO - Successful: 9400, Failed: 0, Retried: 2
+2024-11-24 20:55:25,835 - RetailProducer - INFO - Processing batch 95/97
+2024-11-24 20:55:36,473 - RetailProducer - INFO - Progress: 98.39%
+2024-11-24 20:55:36,474 - RetailProducer - INFO - Successful: 9500, Failed: 0, Retried: 2
+2024-11-24 20:55:36,579 - RetailProducer - INFO - Processing batch 96/97
+2024-11-24 20:55:47,155 - RetailProducer - INFO - Progress: 99.43%
+2024-11-24 20:55:47,157 - RetailProducer - INFO - Successful: 9600, Failed: 0, Retried: 2
+2024-11-24 20:55:47,260 - RetailProducer - INFO - Processing batch 97/97
+2024-11-24 20:55:53,140 - RetailProducer - INFO - Progress: 100.00%
+2024-11-24 20:55:53,141 - RetailProducer - INFO - Successful: 9655, Failed: 0, Retried: 2
+2024-11-24 20:55:53,265 - root - INFO - Data ingestion completed!
+2024-11-24 20:55:53,265 - root - INFO - Total successful sends: 9655
+2024-11-24 20:55:53,265 - root - INFO - Total failed sends: 0
+2024-11-24 20:55:53,265 - root - INFO - Total retried sends: 2
+2024-11-24 20:55:53,267 - kafka.producer.kafka - INFO - Closing the Kafka producer with 30 secs timeout.
+2024-11-24 20:55:53,267 - kafka.client - WARNING - Unable to send to wakeup socket!
+2024-11-24 20:55:53,269 - kafka.conn - INFO - <BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-11-24 20:55:53,273 - RetailProducer - INFO - Kafka producer closed successfully

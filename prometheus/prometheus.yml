@@ -1,0 +1,46 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+rule_files:
+  - alerts.yml
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'retail_metrics'
+    static_configs:
+      - targets: ['metrics-exporter:9100']
+    scrape_interval: 5s
+    metrics_path: '/metrics'
+    honor_labels: true
+
+  - job_name: 'cassandra'
+    static_configs:
+      - targets:
+        - 'europe-node1:7199'
+        - 'americas-node1:7199'
+        - 'apac-node1:7199'
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+    scheme: http
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        regex: '(.*):.*'
+        replacement: '${1}'
+      - source_labels: [__address__]
+        target_label: node
+        regex: '(.*):.*'
+        replacement: '${1}'
+

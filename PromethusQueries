@@ -1,0 +1,37 @@
+# Transaction Metrics
+# Transaction rate by region
+rate(retail_transaction_count_total[5m])
+
+# Total revenue by region
+sum(retail_revenue_total) by (region)
+
+# Average transaction value
+rate(retail_revenue_total[5m]) / rate(retail_transaction_count_total[5m])
+
+# Customer Metrics
+# Customer segments distribution
+retail_customer_segments
+
+# Customer satisfaction by region
+avg(retail_customer_satisfaction) by (region)
+
+# Product Metrics
+# Stock levels by category
+retail_product_stock_level
+
+# Sales rate by category
+rate(retail_product_sales_total[5m])
+
+# Operational Metrics
+# 95th percentile order processing time
+histogram_quantile(0.95, sum(rate(retail_order_processing_seconds_bucket[5m])) by (le))
+
+# System Health
+# CPU Usage
+avg(system_cpu_usage)
+
+# Memory Usage
+avg(system_memory_usage)
+
+# Disk Usage
+avg(system_disk_usage)

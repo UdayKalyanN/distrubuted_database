@@ -1,0 +1,4 @@
+2024-11-24 20:28:50,049 - cassandra.cluster - INFO - New Cassandra host <Host: 172.20.0.6:9042 Americas_DC> discovered
+2024-11-24 20:28:50,049 - cassandra.cluster - INFO - New Cassandra host <Host: 172.20.0.7:9042 AsiaPacific_DC> discovered
+2024-11-24 20:28:50,049 - cassandra.cluster - INFO - Cassandra host 127.0.0.1:9042 removed
+2024-11-24 20:28:50,071 - root - ERROR - Error in main: not all arguments converted during string formatting

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/udaykalyannuthalapati/distributed_retail_analytics/consumers.py", line 1, in <module>
+    from kafka import KafkaConsumer, TopicPartition
+ModuleNotFoundError: No module named 'kafka'

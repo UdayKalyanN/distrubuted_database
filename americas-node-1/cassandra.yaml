@@ -1,0 +1,26 @@
+# Cluster settings
+cluster_name: RetailCluster
+num_tokens: 256
+partitioner: org.apache.cassandra.dht.Murmur3Partitioner
+endpoint_snitch: GossipingPropertyFileSnitch
+
+# Seed provider
+seed_provider:
+  - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+    parameters:
+      - seeds: "europe-node1"
+
+# Network settings
+listen_address: 172.19.0.8
+rpc_address: 0.0.0.0
+broadcast_rpc_address: 172.19.0.8
+
+# Commit log settings
+commitlog_sync: periodic
+commitlog_sync_period_in_ms: 10000  # Adjust if needed
+
+# Directories
+data_file_directories:
+  - /var/lib/cassandra/data
+commitlog_directory: /var/lib/cassandra/commitlog
+saved_caches_directory: /var/lib/cassandra/saved_caches

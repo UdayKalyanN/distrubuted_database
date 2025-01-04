@@ -1,0 +1,5 @@
+2024-11-24 20:28:59,634 - cassandra.cluster - INFO - New Cassandra host <Host: 172.20.0.6:9042 Americas_DC> discovered
+2024-11-24 20:28:59,634 - cassandra.cluster - INFO - New Cassandra host <Host: 172.20.0.7:9042 AsiaPacific_DC> discovered
+2024-11-24 20:28:59,634 - cassandra.cluster - INFO - Cassandra host 127.0.0.1:9042 removed
+2024-11-24 20:28:59,652 - RetailAnalyticsService - ERROR - Error generating insights: not all arguments converted during string formatting
+2024-11-24 20:28:59,652 - root - ERROR - Error in main: not all arguments converted during string formatting

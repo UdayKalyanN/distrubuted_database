@@ -1,0 +1,29 @@
+groups:
+  - name: RetailDataQualityAlerts
+    rules:
+      - alert: UnknownCountriesDetected
+        expr: sum(increase(retail_unknown_countries_total[5m])) > 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unknown countries detected in data stream"
+          description: "{{ $value }} records with unknown countries detected in the last 5 minutes"
+
+      - alert: HighDataQualityIssues
+        expr: sum(increase(retail_data_quality_issues_total[5m])) > 10
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High number of data quality issues detected"
+          description: "{{ $value }} data quality issues detected in the last 5 minutes"
+
+      - alert: ProcessingFailures
+        expr: sum(increase(retail_processed_records_total{status="failed"}[5m])) > 5
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Processing failures detected"
+          description: "{{ $value }} records failed to process in the last 5 minutes"
