@@ -104,6 +104,11 @@ python scripts/consumer.py
 python scripts/analytics_service.py
 ```
 
+### Metrics Exporter
+```bash
+python scripts/metrics_exporter.py
+```
+
 ## 📈 Monitoring
 
 Access monitoring dashboards:
@@ -144,6 +149,8 @@ pytest tests/
 │   ├── producer.py
 │   ├── consumer.py
 │   └── analytics_service.py
+│   └── query_service.py
+│   └── metrics_exporter.py
 ├── config/
 │   ├── cassandra/
 │   └── kafka/
